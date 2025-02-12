@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex gap-14 border border-purple-300 px-1 py-[5px] rounded-full">
+        <div className="hidden md:flex gap-4 border border-purple-300 px-1 py-[5px] rounded-full">
           <Link
             to="/shopify"
             className={`font-semibold text-md py-2 px-5 ${
