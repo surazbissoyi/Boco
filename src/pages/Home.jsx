@@ -27,7 +27,7 @@ const Home = () => {
     const fetchContent = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1337/api/home?populate=*"
+          "https://my-strapi-backend-production-d567.up.railway.app/api/home?populate=*"
         );
         setContent(response.data.data);
         setLoading(false);
@@ -52,7 +52,7 @@ const Home = () => {
       <div className="flex gap-4 flex-col md:flex-row lg:pl-16">
         <div className="w-full md:w-5/12 h-fit md:hidden">
           <img
-            src={`http://localhost:1337${content?.hero_mobile_image?.url}`}
+            src={`https://my-strapi-backend-production-d567.up.railway.app${content?.hero_mobile_image?.url}`}
             alt="Hero"
             className="w-full h-full object-cover"
           />
@@ -95,7 +95,7 @@ const Home = () => {
         </div>
         <div className="w-full sm:w-5/12 h-fit hidden md:block">
           <img
-            src={`http://localhost:1337${content?.hero_image?.url}`}
+            src={`https://my-strapi-backend-production-d567.up.railway.app${content?.hero_image?.url}`}
             alt="Hero"
             className="w-full h-full object-cover"
           />
@@ -180,7 +180,7 @@ const Home = () => {
                   className="min-w-[180px] md:min-w-[220px] rounded-2xl overflow-hidden shadow-lg"
                 >
                   <img
-                    src={`http://localhost:1337${image.url}`}
+                    src={`https://my-strapi-backend-production-d567.up.railway.app${image.url}`}
                     alt={`Portfolio ${index + 1}`}
                     className="w-full h-full object-cover"
                   />

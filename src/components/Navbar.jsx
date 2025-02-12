@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {/* Logo - centered on mobile */}
         <div className="absolute left-1/2 transform -translate-x-1/2 md:static md:translate-x-0">
-          <Link to="/">
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
             <h2 className="text-4xl font-semibold cursor-pointer">boco</h2>
           </Link>
         </div>
@@ -89,13 +89,25 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white py-4 px-4 z-50 border-b border-purple-300">
           <div className="flex flex-col gap-4">
-            <Link to="/" className="text-md border-b pb-2 font-light">
+            <Link 
+              to="/shopify" 
+              className="text-md border-b pb-2 font-light"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Shopify Store Build
             </Link>
-            <Link to="/" className="text-md border-b pb-2 font-light">
+            <Link 
+              to="/landing" 
+              className="text-md border-b pb-2 font-light"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Landing Page Design
             </Link>
-            <Link to="/case" className="text-md font-light">
+            <Link 
+              to="/case" 
+              className="text-md font-light"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Case Studies
             </Link>
           </div>

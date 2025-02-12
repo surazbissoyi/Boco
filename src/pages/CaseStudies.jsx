@@ -9,7 +9,7 @@ const CaseStudies = () => {
     const fetchContent = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1337/api/home?populate=*"
+          "https://my-strapi-backend-production-d567.up.railway.app/api/home?populate=*"
         );
         setContent(response.data.data);
         console.log(response.data.data);
@@ -46,12 +46,12 @@ const CaseStudies = () => {
 
       <div className="flex flex-col md:flex-row gap-10 items-center justify-center px-4 sm:px-0">
         <img
-          src={`http://localhost:1337${content?.case_image1?.url}`}
+          src={`https://my-strapi-backend-production-d567.up.railway.app${content?.case_image1?.url}`}
           alt=""
           className="w-[550px] object-cover"
         />
         <img
-          src={`http://localhost:1337${content?.case_image2?.url}`}
+          src={`https://my-strapi-backend-production-d567.up.railway.app${content?.case_image2?.url}`}
           alt=""
           className="w-[550px] object-cover"
         />
