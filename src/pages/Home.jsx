@@ -295,14 +295,14 @@ const Home = () => {
         </h1>
         <div className="flex flex-col md:flex-row gap-10 items-center justify-center px-4 sm:px-0">
           <img
-            src="/case/image1.png"
+            src={`https://my-strapi-backend-production-d567.up.railway.app${content?.case_image1?.url}`}
             alt=""
-            className="w-[550px] object-cover"
+            className="w-[550px] object-cover cursor-pointer"
           />
           <img
-            src="/case/image2.png"
+            src={`https://my-strapi-backend-production-d567.up.railway.app${content?.case_image2?.url}`}
             alt=""
-            className="w-[550px] object-cover"
+            className="w-[550px] object-cover cursor-pointer"
           />
         </div>
         <button className="px-16 py-4 rounded-full border border-[#140055] text-[#140055] font-semibold text-lg mx-auto block my-16">
